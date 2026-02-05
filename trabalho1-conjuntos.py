@@ -23,7 +23,7 @@ numero = random.randint(4, 8)
 print(numero)
 
 for i in range(numero):
-    numeroAleatorio = random.randint(0, 10)
-    conjuntoB.append(numeroAleatorio)
+    elementoAleatorio = random.randint(0, 10)
+    conjuntoB.append(elementoAleatorio)
 
 print("Conjunto B:", conjuntoB)
