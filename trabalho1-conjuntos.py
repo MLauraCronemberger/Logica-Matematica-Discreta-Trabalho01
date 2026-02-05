@@ -1,3 +1,5 @@
+import random
+
 conjuntoA= []
 conjuntoB= []
 
@@ -17,6 +19,11 @@ if 4 <= quantidadeElementos <= 8:
 else:
     print("O conjunto deve ter entre 4 e 8 elementos.")
 
+numero = random.randint(4, 8) 
+print(numero)
 
+for i in range(numero):
+    numeroAleatorio = random.randint(0, 10)
+    conjuntoB.append(numeroAleatorio)
 
-
+print("Conjunto B:", conjuntoB)
