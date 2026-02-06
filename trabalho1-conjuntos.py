@@ -1,7 +1,7 @@
 import random
 
-conjuntoA= []
-conjuntoB= []
+conjuntoA = set()
+conjuntoB = set()
 
 elementosA= input("Escreva abaixo um conjunto que contenha de 4 a 8 elementos, separados por vírgula:")
 
@@ -13,7 +13,7 @@ quantidadeElementos = len(elementosConjuntoA)
 # Verifica se tem entre 4 e 8 elementos
 if 4 <= quantidadeElementos <= 8:
     for elemento in elementosConjuntoA:
-        conjuntoA.append(elemento)
+         conjuntoA.add(elemento)
 
     print("Conjunto A:", conjuntoA)
 else:
@@ -23,7 +23,13 @@ numero = random.randint(4, 8)
 print(numero)
 
 for i in range(numero):
-    elementoAleatorio = random.randint(0, 10)
-    conjuntoB.append(elementoAleatorio)
+    elementoAleatorio = random.randint(0, 9)
+    conjuntoB.add(numeroAleatorio)
 
 print("Conjunto B:", conjuntoB)
+
+uniaoConjuntos= conjuntoA.union(conjuntoB)
+print("A união dos conjuntos é dada por:", uniaoConjuntos)
+
+intersecaoConjuntos= conjuntoA.intersection(conjuntoB)
+print("A intersecao dos conjuntos é dada por:", intersecaoConjuntos)
