@@ -35,19 +35,19 @@ while len(conjuntoB) < numero:
 print("Conjunto B:", conjuntoB)
 
 uniaoConjuntos= conjuntoA.union(conjuntoB)
-print("A∪B=", uniaoConjuntos)
+print("A ∪ B=", uniaoConjuntos)
 
 intersecaoConjuntos= conjuntoA.intersection(conjuntoB)
-print("A∩B=", intersecaoConjuntos)
+print("A ∩ B=", intersecaoConjuntos)
 
 diferencaAB= conjuntoA.difference(conjuntoB)
-print("A-B=", diferencaAB)
+print("A - B=", diferencaAB)
 
 diferencaBA= conjuntoB.difference(conjuntoA)
-print("B-A=", diferencaBA)
+print("B - A=", diferencaBA)
 
 diferencaSimetrica= conjuntoA.symmetric_difference(conjuntoB)
-print("AΔB=", diferencaSimetrica)
+print("A Δ B=", diferencaSimetrica)
 
 cardinalidadeA= len(conjuntoA) + 1
 print("|A|=", cardinalidadeA)
@@ -56,4 +56,4 @@ cardinalidadeB= len(conjuntoB) + 1
 print("|B|=", cardinalidadeB)
 
 cardinalidadeAB= len(uniaoConjuntos) + 1
-print("|A∪B|=", cardinalidadeAB)
+print("|A ∪ B|=", cardinalidadeAB)
