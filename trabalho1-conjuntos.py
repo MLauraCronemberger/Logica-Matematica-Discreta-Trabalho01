@@ -22,9 +22,9 @@ else:
 numero = random.randint(4, 8) 
 print(numero)
 
-for i in range(numero):
+while len(conjuntoB) < numero:
     elementoAleatorio = random.randint(0, 9)
-    conjuntoB.add(numeroAleatorio)
+    conjuntoB.add(elementoAleatorio)
 
 print("Conjunto B:", conjuntoB)
 
