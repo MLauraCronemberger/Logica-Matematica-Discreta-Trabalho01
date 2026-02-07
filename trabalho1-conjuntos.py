@@ -3,21 +3,27 @@ import random
 conjuntoA = set()
 conjuntoB = set()
 
-elementosA= input("Escreva abaixo um conjunto que contenha de 4 a 8 elementos, separados por vírgula:")
+while True:
+    elementosA = input("Escreva abaixo um conjunto que contenha de 4 a 8 elementos, separados por vírgula: ")
 
-elementosConjuntoA= elementosA.split(',')
-elementosConjuntoA = [int(e) for e in elementosConjuntoA]
+    elementosConjuntoA = elementosA.split(',')
+    elementosConjuntoA = [int(e) for e in elementosConjuntoA]
 
-quantidadeElementos = len(elementosConjuntoA)
+    # Verifica se tem repetido
+    if len(elementosConjuntoA) != len(set(elementosConjuntoA)):
+        print("Não pode haver números repetidos. Digite novamente.\n")
+        continue
 
 # Verifica se tem entre 4 e 8 elementos
-if 4 <= quantidadeElementos <= 8:
-    for elemento in elementosConjuntoA:
-         conjuntoA.add(elemento)
+    if 4 <= len(elementosConjuntoA) <= 8:
+        for elemento in elementosConjuntoA:
+            conjuntoA.add(elemento)
+        print("Conjunto A:", conjuntoA)
+        break
 
-    print("Conjunto A:", conjuntoA)
-else:
-    print("O conjunto deve ter entre 4 e 8 elementos.")
+    else:
+        print("O conjunto deve ter entre 4 e 8 elementos.\n")
+        continue
 
 numero = random.randint(4, 8) 
 print(numero)
