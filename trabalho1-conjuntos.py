@@ -18,7 +18,7 @@ while True:
     if 4 <= len(elementosConjuntoA) <= 8:
         for elemento in elementosConjuntoA:
             conjuntoA.add(elemento)
-        print("A=", conjuntoA)
+        print("Conjunto A:", conjuntoA)
         break
 
     else:
@@ -32,7 +32,7 @@ while len(conjuntoB) < numero:
     elementoAleatorio = random.randint(0, 9)
     conjuntoB.add(elementoAleatorio)
 
-print("B=", conjuntoB)
+print("Conjunto B:", conjuntoB)
 
 uniaoConjuntos= conjuntoA.union(conjuntoB)
 print("A∪B=", uniaoConjuntos)
@@ -48,3 +48,12 @@ print("B-A=", diferencaBA)
 
 diferencaSimetrica= conjuntoA.symmetric_difference(conjuntoB)
 print("AΔB=", diferencaSimetrica)
+
+cardinalidadeA= len(conjuntoA) + 1
+print("|A|=", cardinalidadeA)
+
+cardinalidadeB= len(conjuntoB) + 1
+print("|B|=", cardinalidadeB)
+
+cardinalidadeAB= len(uniaoConjuntos) + 1
+print("|A∪B|=", cardinalidadeAB)
