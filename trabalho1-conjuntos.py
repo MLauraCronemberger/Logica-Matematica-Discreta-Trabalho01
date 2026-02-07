@@ -18,7 +18,7 @@ while True:
     if 4 <= len(elementosConjuntoA) <= 8:
         for elemento in elementosConjuntoA:
             conjuntoA.add(elemento)
-        print("Conjunto A:", conjuntoA)
+        print("A=", conjuntoA)
         break
 
     else:
@@ -26,16 +26,25 @@ while True:
         continue
 
 numero = random.randint(4, 8) 
-print(numero)
+# print(numero)
 
 while len(conjuntoB) < numero:
     elementoAleatorio = random.randint(0, 9)
     conjuntoB.add(elementoAleatorio)
 
-print("Conjunto B:", conjuntoB)
+print("B=", conjuntoB)
 
 uniaoConjuntos= conjuntoA.union(conjuntoB)
-print("A união dos conjuntos é dada por:", uniaoConjuntos)
+print("A∪B=", uniaoConjuntos)
 
 intersecaoConjuntos= conjuntoA.intersection(conjuntoB)
-print("A intersecao dos conjuntos é dada por:", intersecaoConjuntos)
+print("A∩B=", intersecaoConjuntos)
+
+diferencaAB= conjuntoA.difference(conjuntoB)
+print("A-B=", diferencaAB)
+
+diferencaBA= conjuntoB.difference(conjuntoA)
+print("B-A=", diferencaBA)
+
+diferencaSimetrica= conjuntoA.symmetric_difference(conjuntoB)
+print("AΔB=", diferencaSimetrica)
