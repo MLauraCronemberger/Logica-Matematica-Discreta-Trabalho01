@@ -5,7 +5,7 @@ Este repositório contém a implementação de assuntos vistos na Unidade 1 da d
 
 ## 📋 Descrição do Problema
 
-Este programa implementa operações fundamentais da teoria dos conjuntos utilizando Python. O objetivo é demonstrar na prática os conceitos de união, interseção, diferença, cardinalidade e diferença simétrica entre conjuntos.
+Este programa implementa operações fundamentais da teoria dos conjuntos utilizando Python. O objetivo é demonstrar na prática os conceitos de união, interseção, diferença, diferença simétrica entre conjuntos e cardinalidade.
 
 O programa trabalha com dois conjuntos:
 - **Conjunto A**: Definido pelo usuário (entrada manual)
@@ -115,7 +115,7 @@ Retorna os elementos que estão em B mas **não** estão em A. Utilizamos `.diff
 ### Diferença Simétrica (A Δ B)
 Retorna os elementos que pertencem a A **ou** a B, mas **não** a ambos. É equivalente a (A - B) ∪ (B - A). Implementado com `.symmetric_difference()`.
 
-### Cardinalidade (|A|)
+### Cardinalidade
 Representa o número de elementos em um conjunto. Em Python, obtemos através da função `len()`.
 
 ## 💡 Escolha da Estrutura de Dados
