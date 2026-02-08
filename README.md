@@ -100,19 +100,19 @@ Implementa todas as operações solicitadas:
 
 ## 📚 Conceitos de Teoria dos Conjuntos Aplicados
 
-### União (A ∪ B)
+- União (A ∪ B)
 Retorna todos os elementos que pertencem a A **ou** a B (ou ambos). No código, utilizamos o método `.union()` do Python.
 
-### Interseção (A ∩ B)
+- Interseção (A ∩ B)
 Retorna apenas os elementos que pertencem simultaneamente a A **e** a B. Implementado com `.intersection()`.
 
-### Diferença (A - B)
+- Diferença (A - B)
 Retorna os elementos que estão em A mas **não** estão em B. Utilizamos `.difference()`.
 
-### Diferença (B - A)
+- Diferença (B - A)
 Retorna os elementos que estão em B mas **não** estão em A. Utilizamos `.difference()`.
 
-### Diferença Simétrica (A Δ B)
+- Diferença Simétrica (A Δ B)
 Retorna os elementos que pertencem a A **ou** a B, mas **não** a ambos. É equivalente a (A - B) ∪ (B - A). Implementado com `.symmetric_difference()`.
 
 ### Cardinalidade
