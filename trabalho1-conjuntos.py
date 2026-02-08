@@ -49,11 +49,11 @@ print("B - A=", diferencaBA)
 diferencaSimetrica= conjuntoA.symmetric_difference(conjuntoB)
 print("A Δ B=", diferencaSimetrica)
 
-cardinalidadeA= len(conjuntoA) + 1
+cardinalidadeA= len(conjuntoA)
 print("|A|=", cardinalidadeA)
 
-cardinalidadeB= len(conjuntoB) + 1
+cardinalidadeB= len(conjuntoB)
 print("|B|=", cardinalidadeB)
 
-cardinalidadeAB= len(uniaoConjuntos) + 1
+cardinalidadeAB= len(uniaoConjuntos)
 print("|A ∪ B|=", cardinalidadeAB)
