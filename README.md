@@ -115,7 +115,7 @@ Retorna os elementos que estão em B mas **não** estão em A. Utilizamos `.diff
 ### - Diferença Simétrica (A Δ B)
 Retorna os elementos que pertencem a A **ou** a B, mas **não** a ambos. É equivalente a (A - B) ∪ (B - A). Implementado com `.symmetric_difference()`.
 
-### Cardinalidade
+### - Cardinalidade
 Representa o número de elementos em um conjunto. Em Python, obtemos através da função `len()`.
 
 ## 💡 Escolha da Estrutura de Dados
