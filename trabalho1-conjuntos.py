@@ -26,7 +26,6 @@ while True:
         continue
 
 numero = random.randint(4, 8) 
-# print(numero)
 
 while len(conjuntoB) < numero:
     elementoAleatorio = random.randint(0, 9)
